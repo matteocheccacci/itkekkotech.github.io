@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KekkOS Mobile Loading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" type="image/x-icon" href="https://services.kekkotech.com/logos/kekkotech/logo.png">
+</head>
+    
+<body>
+
+    <div id="loader-mobile">
+        <div class="loader-content"></div>
+    </div>
+
+    <div id="terminal" style="display: none;">
+        <div id="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div id="terminal-window-title" class="terminal-title"></div>
+        </div>
+        <div id="terminal-body">
+            <div id="output"></div>
+            <div id="command-buttons">
+                <button class="mobile-command" data-command="aboutme">aboutme</button>
+                <button class="mobile-command" data-command="projects">projects</button>
+                <button class="mobile-command" data-command="contacts">contacts</button>
+                <button class="mobile-command" data-command="status">status</button>
+                <button class="mobile-command" data-command="cls">cls</button>
+            </div>
+        </div>
+        <div id="terminal-footer">
+            <span id="version-display"></span>
+        </div>
+    </div>
+
+    <script src="js/mobile.js"></script>
+</body>
+</html>

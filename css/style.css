@@ -1,0 +1,102 @@
+body {
+    background-color: #000;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    overflow: hidden; /* Nasconde lo scroll */
+}
+
+/* Schermata di Caricamento */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-content {
+    text-align: left;
+}
+
+/* Terminale */
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #0F0;
+    box-shadow: 0 0 10px #0F0;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminal-header {
+    background-color: #333;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0F0;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.close { background-color: #FF5F56; }
+.minimize { background-color: #FFBD2E; }
+.maximize { background-color: #27C93F; }
+
+.terminal-title {
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#terminal-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#output p {
+    margin: 0;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 8px;
+}
+
+#input {
+    background-color: transparent;
+    border: none;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    width: 100%;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
